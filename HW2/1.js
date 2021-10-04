@@ -28,8 +28,8 @@ function selectFromInterval(array, firstValue, secondValue) {
   
 
 const myIterable = {
-  from: 7,
-  to: 5,
+  from: 1,
+  to: 4,
 
   [Symbol.iterator]() {
     if (this.to < this.from){
