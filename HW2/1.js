@@ -38,7 +38,6 @@ const myIterable = {
     if ([this.from, this.to].some(el => !Number.isInteger(el))){
       throw new Error('Ошибка!') 
     }
-    this.from;
     return this;
   },
 
