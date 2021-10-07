@@ -28,8 +28,8 @@ function selectFromInterval(array, firstValue, secondValue) {
   
 
 const myIterable = {
-  from: 1,
-  to: 4,
+  from: 11,
+  to: 111,
 
   [Symbol.iterator]() {
     if (this.to < this.from){
@@ -38,7 +38,6 @@ const myIterable = {
     if ([this.from, this.to].some(el => !Number.isInteger(el))){
       throw new Error('Ошибка!') 
     }
-    this.from;
     return this;
   },
 
@@ -52,5 +51,9 @@ const myIterable = {
   }
 };
 
+for (let item of myIterable) {
+  console.log(item); 
+}
+ 
 
 
