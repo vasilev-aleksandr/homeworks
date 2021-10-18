@@ -140,15 +140,5 @@ class Car {
   }
 }
 
-const bmw = new Car();
-bmw.brand = 'BMW';
-bmw.model = 'X5';
-bmw.yearOfManufacturing = 2007;
-bmw.maxSpeed = 250;
-bmw.maxFuelVolume = 20;
-bmw.fuelConsumption = 15;
-console.log(bmw);
-
-
 module.exports = { Car };
 
